@@ -1,0 +1,18 @@
+[mysqld]
+# Options for mysqld process:
+ndbcluster                      # run NDB storage engine
+ndb-connectstring=dbmgr   # location of management server
+socket=/var/lib/mysql/mysql.sock    # needed to prevent errors in v7.3
+pid-file=/var/run/mysqld.pid        # needed to prevent errors in v7.3
+log-error=/var/log/mysqld.log
+
+[mysqld_safe]
+pid-file=/var/run/mysqld.pid        # needed to prevent errors in v7.3
+log-error=/var/log/mysqld.log
+
+[mysql_cluster]
+# Options for ndbd process:
+ndb-connectstring=dbmgr    # location of management server
+
+[client]
+socket=/var/lib/mysql/mysql.sock    # needed to prevent errors in v7.3
