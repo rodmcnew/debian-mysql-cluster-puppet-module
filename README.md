@@ -1,0 +1,1 @@
+This has not been fully converted to a puppet module and needs to be cleaned up but it does work for MYSQL cluster 7.2.7. This installs a MYSQL cluster on Debian-based systems. The cluster has two data nodes, two MYSQL API nodes, and one cluster manager node.
